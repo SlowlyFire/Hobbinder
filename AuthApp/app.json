@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "AuthApp",
+    "slug": "AuthApp",
+    "newArchEnabled": true,
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "95e59cff-a2b4-4114-a6c3-e6a303a5dde6"
+      }
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.project.hobbinder"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.project.hobbinder",
+      "googleServicesFile": "./android/app/google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

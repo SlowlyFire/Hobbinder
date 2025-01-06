@@ -1,0 +1,53 @@
+{
+  "name": "authapp",
+  "version": "1.0.0",
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/metro-config": "^0.19.4",
+    "@expo/vector-icons": "^14.0.4",
+    "@react-native-async-storage/async-storage": "^1.23.1",
+    "@react-native-community/datetimepicker": "^8.2.0",
+    "@react-native-community/netinfo": "^11.4.1",
+    "@react-native-firebase/app": "^21.4.0",
+    "@react-native-firebase/storage": "^21.4.0",
+    "@react-native-picker/picker": "^2.9.0",
+    "@react-navigation/native": "^6.1.18",
+    "@react-navigation/stack": "^6.4.1",
+    "@reduxjs/toolkit": "^2.4.0",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.7.7",
+    "data-fns": "^1.1.0",
+    "dotenv": "^16.4.5",
+    "expo": "~52.0.11",
+    "expo-constants": "~17.0.3",
+    "expo-device": "~7.0.1",
+    "expo-image-picker": "~16.0.3",
+    "expo-linear-gradient": "^14.0.1",
+    "expo-notifications": "^0.29.8",
+    "expo-status-bar": "~2.0.0",
+    "firebase": "^11.0.1",
+    "fs-extra": "^11.2.0",
+    "getenv": "^1.0.0",
+    "node-cron": "^3.0.3",
+    "react": "^18.3.1",
+    "react-native": "^0.76.3",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-get-random-values": "^1.11.0",
+    "react-native-google-places-autocomplete": "^2.5.7",
+    "react-native-safe-area-context": "^4.12.0",
+    "react-native-screens": "~4.1.0",
+    "react-redux": "^9.1.2",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "expo-module-scripts": "^3.5.2"
+  },
+  "private": true
+}
