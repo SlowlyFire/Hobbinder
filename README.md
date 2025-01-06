@@ -1,69 +1,153 @@
-Hobbinder is an innovative mobile application designed to connect people through shared interests and events. The app uses advanced matching algorithms to help users discover and participate in activities aligned with their hobbies and preferences.
+<h1 align="center">Hobbinder: Connect Through Hobbies 🌟</h1>
+<p align="center">
+  <b>Hobbinder</b> is an innovative mobile app designed to connect people through shared interests and events. Using advanced algorithms, it helps users discover and participate in activities aligned with their hobbies and preferences.
+</p>
 
-Key Features:
-- Smart event discovery with an intuitive swipe interface (right for interested, left for not interested)
-- Location-based event matching that considers user proximity
-- User profiles featuring hobbies, interests, and personal summaries
-- Deep learning matching algorithm that considers multiple factors:
-    - Geographic distance between users and events
-    - User engagement history (likes ratio)
-    - Common interests and hobby compatibility
-    - User activity patterns and preferences
+---
 
-The app's core functionality revolves around:
-1. Event Creation
-  - Users can create and host events based on their interests
-  - Include event details, location, time, and category
-  - Upload images and descriptions
+<h2>📋 Key Features</h2>
 
-2. Event Discovery
-  - Card-based interface showing nearby events
-  - Each card displays event details, host information, and location
-  - Interactive swipe mechanics for easy interaction
+<ul>
+  <li><b>Smart Event Discovery</b><br>
+        &emsp;Intuitive swipe interface:<br>
+      <ul>
+        <li>Swipe <b>right</b> for interested</li>
+        <li>Swipe <b>left</b> for not interested</li>
+      </ul>
+  </li>
+  <li><b>Location-Based Matching</b><br>
+        &emsp;Finds events near you based on proximity.
+  </li>
+  <li><b>User Profiles</b><br>
+        &emsp;Showcase your:
+      <ul>
+        <li>Hobbies</li>
+        <li>Interests</li>
+        <li>Personal summaries</li>
+      </ul>
+  </li>
+  <li><b>Advanced Matching Algorithm</b><br>
+        &emsp;Considers multiple factors:
+      <ul>
+        <li>🌍 Geographic distance</li>
+        <li>📊 User engagement history</li>
+        <li>🤝 Common interests and hobbies</li>
+        <li>📅 User activity patterns and preferences</li>
+      </ul>
+  </li>
+</ul>
 
-3. User Engagement
-  - Profile customization with photos and personal information
-  - Hobby selection and interest matching
-  - Location-based services for relevant event suggestions
+---
 
-4. Matching System
-  - Sophisticated algorithm considering multiple factors:
-  - User's historical event preferences
-  - Geographic proximity
-  - Interest alignment
-  - Time availability
-  - Social compatibility
+<h2>🌟 Core Functionalities</h2>
 
-5. Real-time Interactions
-  - Immediate matching notifications
-  - Event updates and changes
-  - User interaction tracking
+<h3>1. Event Creation</h3>
+<ul>
+  <li>Create and host events.</li>
+  <li>Add event details, location, time, and category.</li>
+  <li>Upload images and descriptions.</li>
+</ul>
 
-The app aims to solve the common challenge of finding like-minded people and meaningful activities in one's area.
-It combines social networking elements with practical event organization, creating a platform that facilitates real-world connections through shared interests.
+<h3>2. Event Discovery</h3>
+<ul>
+  <li>Explore nearby events with a <b>card-based interface</b>.</li>
+  <li>Each card displays event details, host information, and location.</li>
+  <li>Use interactive swipe mechanics for easy navigation.</li>
+</ul>
 
-Technical Implementation:
-  - React Native frontend for cross-platform compatibility
-  - Node.js backend with Express
-  - MongoDB database for flexible data management
-  - JWT authentication for secure user sessions
-  - Google Places API for location services
-  - TensorFlow.js for intelligent matching algorithms
+<h3>3. User Engagement</h3>
+<ul>
+  <li>Customize your profile with photos and personal information.</li>
+  <li>Select hobbies and match interests.</li>
+  <li>Location-based services suggest relevant events.</li>
+</ul>
 
-The primary goal is to make hobby-based social connections more accessible and meaningful,
-helping users build genuine relationships through shared activities and interests.
+<h3>4. Matching System</h3>
+<ul>
+  <li>Event preferences</li>
+  <li>Geographic proximity</li>
+  <li>Interest alignment</li>
+  <li>Time availability</li>
+  <li>Social compatibility</li>
+</ul>
 
-Target Audience:
-  - People looking to explore new hobbies
-  - Individuals seeking like-minded friends
-  - Event organizers and community builders
-  - Hobby enthusiasts wanting to share their passions
-  - Newcomers to an area seeking social connections
+<h3>5. Real-Time Interactions</h3>
+<ul>
+  <li>Get instant notifications for matches.</li>
+  <li>Stay updated on event changes.</li>
+  <li>Track user interactions.</li>
+</ul>
 
-Unique Value Proposition:
-Hobbinder stands out by focusing on activity-based connections rather than traditional social networking,
-emphasizing real-world interactions and shared experiences over purely digital connections.
+---
 
+<h2>🔧 Technical Stack</h2>
 
+<ul>
+  <li><b>Frontend:</b> React Native</li>
+  <li><b>Backend:</b> Node.js with Express</li>
+  <li><b>Database:</b> MongoDB</li>
+  <li><b>Authentication:</b> JWT</li>
+  <li><b>Location Services:</b> Google Places API</li>
+  <li><b>Matching Algorithm:</b> TensorFlow.js</li>
+</ul>
+
+---
+
+<h2>🎯 Target Audience</h2>
+
+<p>Hobbinder is perfect for:</p>
+<ul>
+  <li>People exploring new hobbies</li>
+  <li>Those seeking like-minded friends</li>
+  <li>Event organizers and community builders</li>
+  <li>Hobby enthusiasts sharing passions</li>
+  <li>Newcomers seeking local connections</li>
+</ul>
+
+---
+
+<h2>💡 Unique Value Proposition</h2>
+
+<p><b>Hobbinder</b> focuses on <b>activity-based connections</b>, prioritizing real-world interactions over traditional social networking. Build genuine relationships through shared experiences!</p>
+
+---
+
+<h2>🚀 How to Run the Project</h2>
+
+<ol>
+  <li><b>Set Up Environment Variables</b><br>
+      Find your IP address by running <code>ifconfig</code> in the terminal.<br>
+      Update the IP address in the <code>.env</code> file.
+  </li>
+  <li><b>Install Dependencies</b><br>
+      Run <code>npm install</code> to install required packages.<br>
+      If needed, install specific dependencies listed in <code>package.json</code>.
+  </li>
+  <li><b>Run the Server</b><br>
+      Navigate to the <code>server</code> directory:
+      <pre><code>cd server
+npm run dev</code></pre>
+      Ensure <b>nodemon</b> is installed.
+  </li>
+  <li><b>Run the Client</b><br>
+      Navigate to the <code>AuthApp</code> directory:
+      <pre><code>cd AuthApp
+npm start</code></pre>
+      If IP changes cause issues, try:
+      <pre><code>npm start -- -c</code></pre>
+  </li>
+  <li><b>Test on Mobile</b><br>
+      Open the Expo app on your phone.<br>
+      Scan the QR code to run the client.<br>
+      Alternatively, use an emulator on your computer.
+  </li>
+</ol>
 
 **In order to run the project, you need some configuration files which are saved safely at my protected .env and conf files**
+
+---
+
+<p align="center">Enjoy building connections through hobbies with <b>Hobbinder</b>! 🎉</p>
+
+
+
