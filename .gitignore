@@ -10,3 +10,4 @@ server/node_modules
 server/config/.env.local
 AuthApp/node_modules
 AuthApp/.env
+server/config/hobbinder-c9376-firebase-adminsdk-49tah-578c8bf73e.json
