@@ -63,3 +63,7 @@ Target Audience:
 Unique Value Proposition:
 Hobbinder stands out by focusing on activity-based connections rather than traditional social networking,
 emphasizing real-world interactions and shared experiences over purely digital connections.
+
+
+
+**In order to run the project, you need some configuration files which are saved safely at my protected .env and conf files**
