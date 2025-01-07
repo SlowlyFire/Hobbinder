@@ -120,8 +120,12 @@
       Update the IP address in the <code>.env</code> file.
   </li>
   <li><b>Install Dependencies</b><br>
-      Run <code>npm install</code> to install required packages.<br>
+      To install required packages, run <code>npm install</code> from server and from client sperately.<br>
       If needed, install specific dependencies listed in <code>package.json</code>.
+  </li>
+  <li><b>Create the machine-learning file for matching algorithms</b><br>
+      It's not a must, but it's possible to run <code>cd server/ml</code>, then <code>node trainMode.js</code>.<br>
+      That will create new bin and json files at 'ml/trained-model', which will be the new model and weights for our matching algorithm.
   </li>
   <li><b>Run the Server</b><br>
       Navigate to the <code>server</code> directory:
@@ -142,6 +146,8 @@ npm start</code></pre>
       Alternatively, use an emulator on your computer.
   </li>
 </ol>
+
+---
 
 **In order to run the project, you need some configuration files which are saved safely at my protected .env and conf files**
 
