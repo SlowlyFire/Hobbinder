@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ImageBackground, Image, Alert } from 'react-native';
-import background from '../../assets/background.png';
-import logo from '../../assets/logo.png';
+import background from '../../assets/clear_friends_background.png';
+import logo from '../../assets/friends_title.png'
 import { AuthContext } from '../../context/AuthContext';
 import { SocketContext } from '../../context/SocketContext';
 import { CLIENT_IP, PORT } from '@env';
@@ -70,13 +70,11 @@ const StartScreen = ({ navigation }) => {
   };
 
   return (
-    <ImageBackground source={background} style={styles.background}>
+    <ImageBackground source={background} style={styles.background} resizeMode="cover">
       <View style={styles.container}>
-        <View style={styles.contentContainer}>
-          <Image style={styles.image} source={logo} />
-          <Text style={styles.title}>Sign up to continue</Text>
+        <View style={styles.logo}>
+          <Image source={logo} style={styles.logoImage}/>
         </View>
-
         <View style={styles.buttonContainer}>
           <TouchableOpacity 
             style={styles.loginButton}
@@ -84,81 +82,59 @@ const StartScreen = ({ navigation }) => {
           >
             <Text style={styles.loginButtonText}>👋 Let's Start!</Text>
           </TouchableOpacity>
-
+  
           <TouchableOpacity 
-            style={styles.registerButton}
+            style={styles.loginButton}
             onPress={() => navigation.navigate('Register')}
           >
-            <Text style={styles.registerButtonText}>✨ Create New Account</Text>
+            <Text style={styles.loginButtonText}>✨ Create New Account</Text>
           </TouchableOpacity>
         </View>
       </View>
     </ImageBackground>
   );
-};
+}
 
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    resizeMode: 'cover',
   },
   container: {
     flex: 1,
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    paddingVertical: 40,
+    paddingVertical: '5%',
   },
-  contentContainer: {
+  logo: {
     alignItems: 'center',
-    marginTop: 60, // Moved logo down
+    justifyContent: 'center',
+    flex: 1, // Make it flexible
+    paddingTop: '15%', 
+    width: '100%',
   },
-  image: {
-    width: 300,
-    height: 300,
-    marginBottom: 20,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#FFFFFF',
-    marginBottom: 20,
+  logoImage: {
+    width: '100%', // Make width relative to container
+    height: '55%',
+    maxWidth: 400, // But limit maximum size
+    aspectRatio: 2, // Maintain aspect ratio
+    resizeMode: 'contain',
   },
   buttonContainer: {
     width: '100%',
-    paddingHorizontal: 40,
-    marginBottom: 40,
+    paddingHorizontal: '10%',
+    paddingBottom: '60%', // Add bottom padding
+    justifyContent: 'flex-end', // Align buttons to bottom
   },
   loginButton: {
-    backgroundColor: '#4A90E2', // Changed to match the background blue
-    padding: 18,
+    backgroundColor: '#04090d',
+    opacity: 0.92,
+    padding: '5%',
     borderRadius: 16,
     alignItems: 'center',
-    marginBottom: 16,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    marginBottom: '4%',
   },
   loginButtonText: {
     color: 'white',
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  registerButton: {
-    backgroundColor: 'transparent',
-    padding: 18,
-    borderRadius: 16,
-    alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#fff',
-  },
-  registerButtonText: {
-    color: '#fff',
     fontSize: 20,
     fontWeight: 'bold',
   },
